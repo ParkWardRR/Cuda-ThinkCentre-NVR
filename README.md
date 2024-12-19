@@ -1,5 +1,7 @@
+Here is the updated full version with the revised **Graphics Card (CUDA Tasks)** section:
+
 # **Cuda-TinyNVR-Build**
- 
+
 ## **Summary of Specs and Cost**
 
 | **Component**         | **Details**                                                                 |
@@ -8,13 +10,12 @@
 | **CPU (Low TDP)**     | Intel Core i5-8600T (6 cores, 6 threads, 2.3GHz base, 3.7GHz boost, 35W TDP)|
 | **RAM (32GB DDR4)**   | 2x16GB, 2666MHz                                                             |
 | **Storage (NVMe)**    | 512GB NVMe SSD (primary) + 4TB NVMe SSD (video storage)                     |
-| **GPU (CUDA Tasks)**  | HP Nvidia Quadro K1200 (512 CUDA cores, 4GB GDDR5)                          |
+| **GPU (CUDA Tasks)**  | HP Nvidia Quadro T400 (384 CUDA cores, 2GB GDDR6)                           |
 | **Networking (2.5GbE NIC)** | Intel I225-V Ethernet NIC (M.2 A+E slot, Multi-Gig support)                |
-| **Expansion**         | PCIe riser card with GPU faceplate (compatible with T1000 and K1200 GPUs)  |
+| **Expansion**         | PCIe riser card with GPU faceplate (compatible with T400 and K1200 GPUs)   |
 | **Total Cost**        | **$477 USD (approx.)**                                                      |
 
 ---
-
 
 ## **Table of Contents**
 1. [Introduction](#introduction)
@@ -40,7 +41,7 @@ This NVR (Network Video Recorder) build is based on a compact **Lenovo ThinkCent
 ### **Key Features**
 - **Compact Design:** 1L ultra-small form factor.
 - **Affordable Build:** Uses marketplace prices for cost-effective components.
-- **Performance Upgrades:** Enhanced with 32GB RAM, dual NVMe SSDs, and a Quadro K1200 GPU.
+- **Performance Upgrades:** Enhanced with 32GB RAM, dual NVMe SSDs, and a Quadro T400 GPU.
 - **High-Speed Networking:** Includes 2.5GbE NIC for fast backups to a Synology NAS.
 - **Expandable Storage:** Onboard SATA and eSATA options for future upgrades.
 
@@ -87,19 +88,19 @@ This NVR (Network Video Recorder) build is based on a compact **Lenovo ThinkCent
 
 ---
 
-### 🎮 **Graphics Card (CUDA Tasks)**
-- **Installed GPU:** HP Nvidia Quadro K1200  
-    - CUDA Cores: 512  
-    - Memory: 4GB GDDR5  
-    - Use Case: Optimized for CUDA acceleration in facial recognition and AI processing tasks.  
-    - Compatibility: T1000 GPU faceplate fits the K1200 perfectly.  
+### 🤖 **Graphics Card (CUDA Tasks)**
+- **Installed GPU:** HP Nvidia Quadro T400  
+    - CUDA Cores: 384  
+    - Memory: 2GB GDDR6  
+    - Use Case: Optimized for AI, machine learning, and CUDA-accelerated tasks such as facial recognition and video analysis.  
+    - Compatibility: Fits perfectly with the riser card faceplate included in this build.  
     - Note: Relies on CPU’s Quick Sync Video for Plex transcoding; does not support hardware transcoding itself.
 
 ---
 
 ### 🔌 **Expansion**
 - PCIe expansion riser card:
-    - Includes faceplate compatible with Nvidia T1000 and K1200 GPUs.
+    - Includes faceplate compatible with Nvidia T400 and K1200 GPUs.
 
 ---
 
@@ -113,7 +114,7 @@ This NVR (Network Video Recorder) build is based on a compact **Lenovo ThinkCent
 | M.2 A+E Intel I225-V Ethernet NIC Card | $28.63      |
 | Expansion Riser Card                   | $25.98      |
 | 4TB NVMe SSD                           | $200        |
-| HP Nvidia Quadro K1200 GPU             | $35         |
+| HP Nvidia Quadro T400 GPU              | $35         |
 | **Total Cost**                         | **$477.54** |
 
 ---
@@ -145,9 +146,9 @@ This NVR (Network Video Recorder) build is based on a compact **Lenovo ThinkCent
 
 2. The Intel Core i5-8600T processor supports hardware acceleration for H.264, H.265, VP8, and VP9 codecs via Intel Quick Sync Video, making it ideal for Plex transcoding and media-related tasks.
 
-3. The HP Nvidia Quadro K1200 GPU is used exclusively for CUDA-based tasks like facial recognition but is outperformed by newer GPUs like the Nvidia T1000:
-   - The T1000 offers nearly double the CUDA cores (896 vs 512) and significantly higher memory bandwidth (~160 GB/s vs ~80 GB/s).
-   - However, the K1200 is a cost-effective option at just $35 compared to the T1000’s ~$230 price point while remaining compatible with this build's riser card faceplate.
+3. The HP Nvidia Quadro T400 GPU is used exclusively for CUDA-based tasks like facial recognition but is outperformed by higher-end GPUs like the Nvidia T1000:
+   - The T1000 offers more CUDA cores and higher memory bandwidth but comes at a significantly higher price point (~$230).
+   - The T400 strikes a balance between cost-effectiveness ($35) and performance while remaining compatible with this build's riser card faceplate.
 
 4. The M.2 A+E Intel I225-V Ethernet NIC provides fast multi-gigabit networking, enabling efficient backups to slower storage systems like a Synology NAS with spinning drives.
 
