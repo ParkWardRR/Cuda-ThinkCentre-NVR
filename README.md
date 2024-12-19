@@ -1,5 +1,3 @@
-Here is the updated full version with the revised **Graphics Card (CUDA Tasks)** section:
-
 # **Cuda-TinyNVR-Build**
 
 ## **Summary of Specs and Cost**
