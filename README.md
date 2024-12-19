@@ -1,4 +1,20 @@
 # **Cuda-TinyNVR-Build**
+ 
+## **Summary of Specs and Cost**
+
+| **Component**         | **Details**                                                                 |
+|-----------------------|-----------------------------------------------------------------------------|
+| **Base System**       | Lenovo ThinkCentre M920x Tiny (1L form factor, Intel Q370 chipset)          |
+| **CPU (Low TDP)**     | Intel Core i5-8600T (6 cores, 6 threads, 2.3GHz base, 3.7GHz boost, 35W TDP)|
+| **RAM (32GB DDR4)**   | 2x16GB, 2666MHz                                                             |
+| **Storage (NVMe)**    | 512GB NVMe SSD (primary) + 4TB NVMe SSD (video storage)                     |
+| **GPU (CUDA Tasks)**  | HP Nvidia Quadro K1200 (512 CUDA cores, 4GB GDDR5)                          |
+| **Networking (2.5GbE NIC)** | Intel I225-V Ethernet NIC (M.2 A+E slot, Multi-Gig support)                |
+| **Expansion**         | PCIe riser card with GPU faceplate (compatible with T1000 and K1200 GPUs)  |
+| **Total Cost**        | **$477 USD (approx.)**                                                      |
+
+---
+
 
 ## **Table of Contents**
 1. [Introduction](#introduction)
